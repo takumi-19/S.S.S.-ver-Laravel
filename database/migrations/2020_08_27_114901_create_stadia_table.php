@@ -15,7 +15,7 @@ class CreateStadiaTable extends Migration
     {
         Schema::create('stadia', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('studium_name')->unique();
+            $table->string('stadium_name')->unique();
             $table->string('city');
             $table->bigInteger('team_id')->unsigned();
             $table->foreign('team_id')->references('id')->on('teams')->onDelete('restrict');
