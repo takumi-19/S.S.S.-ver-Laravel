@@ -7,10 +7,15 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@import 'modules/header';
 @import 'modules/stadia';
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
 }
 
 .sapporo_color {
