@@ -8,6 +8,6 @@ class Player extends Model
 {
     public function team()
     {
-        return $this->hasOne('App\Models\Team');
+        return $this->belongsTo('App\Models\Team');
     }
 }

@@ -8,12 +8,12 @@ class Room extends Model
 {
     public function match()
     {
-        return $this->hasOne('App\Models\Match');
+        return $this->belongsTo('App\Models\Match');
     }
 
     public function team()
     {
-        return $this->hasOne('App\Models\Team');
+        return $this->belongsTo('App\Models\Team');
     }
 
     public function comments()
