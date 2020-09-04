@@ -18,3 +18,4 @@ Route::get('/', 'StadiumController@index');
 Auth::routes();
 
 Route::resource('stadium', 'StadiumController', ['only' => ['index']]);
+Route::resource('match', 'MatchController', ['only' => ['show']]);
