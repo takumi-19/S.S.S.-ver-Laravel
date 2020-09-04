@@ -13,7 +13,7 @@ class Match extends Model
 
     public function rooms()
     {
-        return $this->hasMany('App\Models\Room');
+        return $this->hasMany('App\Models\Room', 'match_id');
     }
 
     public function home_team(){

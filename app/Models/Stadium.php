@@ -8,6 +8,6 @@ class Stadium extends Model
 {
     public function matches()
     {
-        return $this->hasMany('App\Models\Match');
+        return $this->hasMany('App\Models\Match')->orderBy('kick_off', 'DESC');
     }
 }
