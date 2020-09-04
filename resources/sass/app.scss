@@ -8,7 +8,10 @@
 @import '~bootstrap/scss/bootstrap';
 
 @import 'modules/header';
-@import 'modules/stadia';
+@import 'modules/footer';
+@import 'modules/main_template';
+@import 'modules/stadia/index';
+
 
 * {
   box-sizing: border-box;
