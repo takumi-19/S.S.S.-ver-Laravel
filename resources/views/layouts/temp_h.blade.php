@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('body')
 <header>
   <a href='/', class="HeaderLodo">
     <div class="HeaderLodo__left">
@@ -25,8 +25,8 @@
     </div>
   </div>
 </header>
-<div class="container">
+<main>
   @yield("container")
-</div>
+</main>
 @endsection
 
