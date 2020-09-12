@@ -16,13 +16,13 @@
           <p class="Right">第{{ $match->week }}節</p>
         </div>
         <div class="Stadium__btn--bottom">
-          <img src="{{ $match->home_team->team_logo }}" alt="ホームチームエンブレム" class="Btn__teamLogo--home">
+          <img src={{ asset($match->home_team->team_logo) }} alt="ホームチームエンブレム" class="Btn__teamLogo--home">
           <span class="#{$match->home_team->team_color}"></span>
           <h3 class="Btn__teamName--home">{{ $match->home_team->team_name }}</h3>
           <h4 class="Btn__versus">VS</h4>
           <h3 class="Btn__teamName--away">{{ $match->away_team->team_name }}</h3>
           <span class="#{$match->away_team->team_color}"></span>
-          <img src="{{ $match->away_team->team_logo }}" alt="アウェーチームエンブレム" class="Btn__teamLogo--away">
+          <img src={{ asset($match->away_team->team_logo) }} alt="アウェーチームエンブレム" class="Btn__teamLogo--away">
           <h3 class="KickoffTime">{{ date('m/d H:i', strtotime($match->kick_off)) }}KO</h3>
         </div>
       </a>
@@ -34,13 +34,13 @@
           <p class="Right">第{{ $match->week }}節</p>
         </div>
         <div class="Stadium__btn--bottom">
-          <img src="{{ $match->home_team->team_logo }}" alt="ホームチームエンブレム" class="Btn__teamLogo--home">
+          <img src={{ asset($match->home_team->team_logo) }} alt="ホームチームエンブレム" class="Btn__teamLogo--home">
           <span class="#{$match->home_team->team_color}"></span>
           <h3 class="Btn__teamName--home">{{ $match->home_team->team_name }}</h3>
           <h4 class="Btn__versus">VS</h4>
           <h3 class="Btn__teamName--away">{{ $match->away_team->team_name }}</h3>
           <span class="#{$match->away_team->team_color}"></span>
-          <img src="{{ $match->away_team->team_logo }}" alt="アウェーチームエンブレム" class="Btn__teamLogo--away">
+          <img src={{ asset($match->away_team->team_logo) }} alt="アウェーチームエンブレム" class="Btn__teamLogo--away">
           <h3 class="KickoffTime">{{ date('m/d H:i', strtotime($match->kick_off)) }}KO</h3>
         </div>
       </div>
