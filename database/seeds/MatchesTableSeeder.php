@@ -21,6 +21,6 @@ class MatchesTableSeeder extends Seeder
         DB::table('matches')->insert(['week' => 1, 'kick_off' => '2020-02-23 14:00:00', 'stadium_id' => 16, 'home_team_id' => 16, 'away_team_id' => 3]);
         DB::table('matches')->insert(['week' => 1, 'kick_off' => '2020-02-23 16:00:00', 'stadium_id' => 15, 'home_team_id' => 15, 'away_team_id' => 9]);
 
-        DB::table('matches')->insert(['week' => 14, 'kick_off' => '2020-09-05 14:00:00', 'stadium_id' => 1, 'home_team_id' => 1, 'away_team_id' => 16]);
+        DB::table('matches')->insert(['week' => 14, 'kick_off' => '2020-09-13 14:00:00', 'stadium_id' => 1, 'home_team_id' => 1, 'away_team_id' => 13]);
     }
 }
