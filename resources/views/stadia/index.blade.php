@@ -10,19 +10,19 @@
       <h5 class="Stadium__name">{{ $stadium->stadium_name }}</h5>
       @foreach($stadium->matches->all() as $match)
       @if (strtotime("now") <= strtotime($match->kick_off . '+150 minute'))
-      <a href="{{ action('MatchController@show', $match->id) }}" class="Stadium__btn">
+      <a href="{{ route('match.show', $match->id) }}" class="Stadium__btn">
         <div class="Stadium__btn--top">
           <p class="Left">NEXT GAME</p>
           <p class="Right">第{{ $match->week }}節</p>
         </div>
         <div class="Stadium__btn--bottom">
-          <img src="image/{{ $match->home_team->team_logo }}" alt="ホームチームエンブレム" class="Btn__teamLogo--home">
+          <img src="{{ $match->home_team->team_logo }}" alt="ホームチームエンブレム" class="Btn__teamLogo--home">
           <span class="#{$match->home_team->team_color}"></span>
           <h3 class="Btn__teamName--home">{{ $match->home_team->team_name }}</h3>
           <h4 class="Btn__versus">VS</h4>
           <h3 class="Btn__teamName--away">{{ $match->away_team->team_name }}</h3>
           <span class="#{$match->away_team->team_color}"></span>
-          <img src="image/{{ $match->away_team->team_logo }}" alt="アウェーチームエンブレム" class="Btn__teamLogo--away">
+          <img src="{{ $match->away_team->team_logo }}" alt="アウェーチームエンブレム" class="Btn__teamLogo--away">
           <h3 class="KickoffTime">{{ date('m/d H:i', strtotime($match->kick_off)) }}KO</h3>
         </div>
       </a>
@@ -34,13 +34,13 @@
           <p class="Right">第{{ $match->week }}節</p>
         </div>
         <div class="Stadium__btn--bottom">
-          <img src="image/{{ $match->home_team->team_logo }}" alt="ホームチームエンブレム" class="Btn__teamLogo--home">
+          <img src="{{ $match->home_team->team_logo }}" alt="ホームチームエンブレム" class="Btn__teamLogo--home">
           <span class="#{$match->home_team->team_color}"></span>
           <h3 class="Btn__teamName--home">{{ $match->home_team->team_name }}</h3>
           <h4 class="Btn__versus">VS</h4>
           <h3 class="Btn__teamName--away">{{ $match->away_team->team_name }}</h3>
           <span class="#{$match->away_team->team_color}"></span>
-          <img src="image/{{ $match->away_team->team_logo }}" alt="アウェーチームエンブレム" class="Btn__teamLogo--away">
+          <img src="{{ $match->away_team->team_logo }}" alt="アウェーチームエンブレム" class="Btn__teamLogo--away">
           <h3 class="KickoffTime">{{ date('m/d H:i', strtotime($match->kick_off)) }}KO</h3>
         </div>
       </div>
