@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   min-height: 100vh;
   padding-top: 60px;
@@ -6,4 +10,64 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: scroll;
+  font-family: "Source Sans Pro", Helvetica, Arial, "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", sans-serif;
+}
+main {
+  width: 100vw;
+  min-height: calc(100vh - 130px);
+}
+
+.sapporo_color {
+  background-color: #FF3300;
+}
+.sendai_color {
+  background-color: #FFCC00;
+}
+.kashima_color {
+  background-color: #CC0033;
+}
+.urawa_color {
+  background-color: #FF3333;
+}
+.kashiwa_color {
+  background-color: #FFFF00;
+}
+.ftokyo_color {
+  background-color: #0000AA;
+}
+.kawasaki_color {
+  background-color: #0099FF;
+}
+.yokohamafm_color {
+  background-color: #0000FF;
+}
+.yokohamafc_color {
+  background-color: #0099FF;
+}
+.shonan_color {
+  background-color: #66CC33;
+}
+.shimizu_color {
+  background-color: #FF9900;
+}
+.nagoya_color {
+  background-color: #FF4500;
+}
+.gosaka_color {
+  background-color: #0033CC;
+}
+.cosaka_color {
+  background-color: #FF1493;
+}
+.kobe_color {
+  background-color: #DC143C;
+}
+.hiroshima_color {
+  background-color: #6633CC;
+}
+.tosu_color {
+  background-color: #00CCFF;
+}
+.oita_color {
+  background-color: #0000CD;
 }
