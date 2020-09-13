@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="MatchCard">
-    <a href="#" class="HomeTeam Btn">
+    <a href="{{ route('room.show', $home_team_room->id) }}" class="HomeTeam Btn">
       <div class="Btn__text">
         HOME TEAM
       </div>
@@ -22,7 +22,7 @@
         {{ $match->home_team->team_name }}
       </div>
     </a>
-    <a href="#" class="AwayTeam Btn">
+    <a href="{{ route('room.show', $away_team_room->id) }}" class="AwayTeam Btn">
       <div class="Btn__text">
         AWAY TEAM
       </div>

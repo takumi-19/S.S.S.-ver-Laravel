@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::resource('stadium', 'StadiumController', ['only' => ['index']]);
 Route::resource('match', 'MatchController', ['only' => ['show']]);
+Route::resource('room', 'RoomController', ['only' => ['show']]);
