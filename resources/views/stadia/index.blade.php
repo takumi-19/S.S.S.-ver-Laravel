@@ -10,7 +10,7 @@
       <h5 class="Stadium__name">{{ $stadium->stadium_name }}</h5>
       @foreach($stadium->matches->all() as $match)
       @if (strtotime("now") <= strtotime($match->kick_off . '+150 minute'))
-      <a href="{{ route('match.show', $match->id) }}" class="Stadium__btn">
+      <a href="{{ route('matches.show', $match->id) }}" class="Stadium__btn">
         <div class="Stadium__btn--top">
           <p class="Left">NEXT GAME</p>
           <p class="Right">第{{ $match->week }}節</p>

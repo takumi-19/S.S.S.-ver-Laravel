@@ -17,6 +17,7 @@ Route::get('/', 'StadiumController@index');
 
 Auth::routes();
 
-Route::resource('stadium', 'StadiumController', ['only' => ['index']]);
-Route::resource('match', 'MatchController', ['only' => ['show']]);
-Route::resource('room', 'RoomController', ['only' => ['show']]);
+Route::resource('stadia', 'StadiumController', ['only' => ['index']]);
+Route::resource('matches', 'MatchController', ['only' => ['show']]);
+Route::resource('rooms', 'RoomController', ['only' => ['show']]);
+Route::resource('rooms.comments', 'RoomCommentController', ['only' => ['index']]);
