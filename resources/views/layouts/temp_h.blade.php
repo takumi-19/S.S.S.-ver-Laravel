@@ -28,5 +28,6 @@
 <main>
   @yield("container")
 </main>
+@yield("bottom_container")
 @endsection
 
