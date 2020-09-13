@@ -59,3 +59,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+@if (strtotime("now") <= strtotime($match->kick_off . '+150 minute') && strtotime($match->kick_off . '-2 hour') <= strtotime("now"))
