@@ -15,4 +15,7 @@ class Comment extends Model
     {
         return $this->belongsTo('App\Models\Room', 'room_id');
     }
+
+    protected $fillable = ['content', 'image', 'user_id', 'room_id'];
+    protected $table = 'comments';
 }

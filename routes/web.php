@@ -20,4 +20,4 @@ Auth::routes();
 Route::resource('stadia', 'StadiumController', ['only' => ['index']]);
 Route::resource('matches', 'MatchController', ['only' => ['show']]);
 Route::resource('rooms', 'RoomController', ['only' => ['show']]);
-Route::resource('rooms.comments', 'RoomCommentController', ['only' => ['index']]);
+Route::resource('rooms.comments', 'RoomCommentController', ['only' => ['index', 'store']]);
